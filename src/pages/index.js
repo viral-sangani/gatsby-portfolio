@@ -41,7 +41,7 @@ export default Home
 
 export const pageQuery = graphql`
     query IndexQuery {
-        allMdx(sort: { fields: frontmatter___index, order: DESC }) {
+        allMdx(sort: { fields: frontmatter___index, order: ASC }) {
             edges {
                 node {
                     id

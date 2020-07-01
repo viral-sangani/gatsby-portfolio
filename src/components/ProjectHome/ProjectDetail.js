@@ -1,5 +1,6 @@
 import React from 'react'
 import Img from 'gatsby-image'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 export default function ProjectDetail({ content, image, backgroundColor }) {
     return (
@@ -8,13 +9,10 @@ export default function ProjectDetail({ content, image, backgroundColor }) {
                 Tag="div"
                 className="image__img_blog"
                 fluid={image}
+                style={{ marginBottom: 20 }}
                 backgroundColor={backgroundColor}
             />
-            <div
-                className="post-content"
-                style={{ color: '#f2f2f2' }}
-                dangerouslySetInnerHTML={{ __html: content }}
-            />
+            <MDXRenderer>{content}</MDXRenderer>
         </article>
     )
 }

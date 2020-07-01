@@ -27,7 +27,7 @@ export default function ProjectHome(props) {
                             projectTitle={project.frontmatter.title}
                         />
                         <ProjectDetail
-                            content={project.frontmatter.content}
+                            content={project.body}
                             image={
                                 project.frontmatter.featuredImage
                                     .childImageSharp.fluid
@@ -44,6 +44,7 @@ export default function ProjectHome(props) {
 export const pageQuery = graphql`
     query MyQuery($slug: String!) {
         mdx(frontmatter: { slug: { eq: $slug } }) {
+            body
             frontmatter {
                 color_hex
                 github_url
@@ -54,7 +55,6 @@ export const pageQuery = graphql`
                 tagLine
                 title
                 year
-                content
                 featuredImage {
                     childImageSharp {
                         fluid(maxWidth: 1000, quality: 100) {
