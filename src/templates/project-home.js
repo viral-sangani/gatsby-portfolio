@@ -24,7 +24,7 @@ export default ProjectHome
 
 export const pageQuery = graphql`
     query ProjectQuery {
-        allMdx(sort: { fields: frontmatter___index, order: DESC }) {
+        allMdx(sort: { fields: frontmatter___index, order: ASC }) {
             edges {
                 node {
                     id
