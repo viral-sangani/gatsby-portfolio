@@ -1,5 +1,6 @@
 import React from 'react'
 import { Spring } from 'react-spring/renderprops'
+import Resume from '../../static/Viral_Sangani_Resume.pdf'
 
 function renderMain() {
     return (
@@ -205,9 +206,11 @@ function renderMain() {
             </div>
             <div className="btn-wrapper">
                 <div className="btn">
-                    <button id="button" type="button">
-                        Download Resume
-                    </button>
+                    <a href={Resume} download>
+                        <button id="button" type="button">
+                            Download Resume
+                        </button>
+                    </a>
                 </div>
             </div>
         </section>
