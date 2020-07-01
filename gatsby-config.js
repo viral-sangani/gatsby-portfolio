@@ -9,12 +9,6 @@ module.exports = {
         `gatsby-plugin-sharp`,
         `gatsby-plugin-mdx`,
         {
-            resolve: 'gatsby-plugin-page-creator',
-            options: {
-                path: `${__dirname}/src/posts`,
-            },
-        },
-        {
             resolve: `gatsby-plugin-s3`,
             options: {
                 bucketName: 'viralsangani.me',
@@ -67,8 +61,14 @@ module.exports = {
         },
         {
             resolve: `gatsby-plugin-nprogress`,
+            options: {
+                // Setting a color is optional.
+                color: `tomato`,
+                // Disable the loading spinner.
+                showSpinner: true,
+            },
         },
-        'gatsby-plugin-sitemap',
+        `gatsby-plugin-advanced-sitemap`,
         {
             resolve: 'gatsby-plugin-react-svg',
             options: {
@@ -81,6 +81,32 @@ module.exports = {
             resolve: 'gatsby-source-rest-api',
             options: {
                 endpoints: ['https://api.github.com/users/viral-sangani/repos'],
+            },
+        },
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `Viral Sangani`,
+                short_name: `Viral Sangani`,
+                start_url: `/`,
+                background_color: `#f7f0eb`,
+                theme_color: `#a2466c`,
+                display: `standalone`,
+                icon: './static/logo.png',
+            },
+        },
+        {
+            resolve: `gatsby-plugin-offline`,
+            options: {
+                precachePages: [`/`],
+            },
+        },
+        {
+            resolve: 'gatsby-plugin-robots-txt',
+            options: {
+                host: 'https://viralsangani.me',
+                sitemap: 'https://viralsangani.me/sitemap.xml',
+                policy: [{ userAgent: '*', allow: '/' }],
             },
         },
     ],

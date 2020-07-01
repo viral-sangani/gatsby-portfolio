@@ -198,9 +198,9 @@ function renderMain() {
                         <br />
                         <a
                             className="link--underline"
-                            href="mailto:hey@viralsangani.me"
+                            href="mailto:viral.sangani2011@gmail.com"
                         >
-                            hey@viralsangani.me
+                            viral.sangani2011@gmail.com
                         </a> */}
                 </h1>
             </div>

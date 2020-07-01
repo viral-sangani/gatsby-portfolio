@@ -81,9 +81,9 @@ const Navigaion = () => {
                                         <li className="header-nav__item hide-xs show-sm">
                                             <a
                                                 className="header-nav__link header-nav__link--light link--no-underline "
-                                                href="mailto:hey@viralsangani.me"
+                                                href="mailto:viral.sangani2011@gmail.com"
                                             >
-                                                hey@viralsangani.me
+                                                viral.sangani2011@gmail.com
                                             </a>
                                         </li>
                                         <li className="header-nav__item hide-xs show-sm">
@@ -213,9 +213,9 @@ const Navigaion = () => {
                             <li className="header-nav__item">
                                 <a
                                     className="header-nav__link header-nav__link--light link--no-underline "
-                                    href="mailto:hey@viralsangani.me"
+                                    href="mailto:viral.sangani2011@gmail.com"
                                 >
-                                    hey@viralsangani.me
+                                    viral.sangani2011@gmail.com
                                 </a>
                             </li>
                             <li className="header-nav__item">

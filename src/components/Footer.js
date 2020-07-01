@@ -10,9 +10,9 @@ const Footer = ({ children }) => {
                         <p>
                             <a
                                 className="email"
-                                href="mailto:hey@viralsangani.me"
+                                href="mailto:viral.sangani2011@gmail.com"
                             >
-                                hey@viralsangani.me
+                                viral.sangani2011@gmail.com
                             </a>
                         </p>
                         <p className="footer-text">
@@ -53,8 +53,8 @@ const Footer = ({ children }) => {
                         <h4 className="mb-xs-20 mb-sm-40">Contact</h4>
                         <ul className="list--reset">
                             <li>
-                                <a href="mailto:hey@viralsangani.me">
-                                    hey@viralsangani.me
+                                <a href="mailto:viral.sangani2011@gmail.com">
+                                    viral.sangani2011@gmail.com
                                 </a>
                             </li>
                             <li>

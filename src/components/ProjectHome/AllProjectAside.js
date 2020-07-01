@@ -17,7 +17,10 @@ export default function AllProjectAside({ projectList }) {
                                         <p>Featured Projects</p>
                                     </li>
                                     {projectList.map(({ node }) => (
-                                        <li className="filters__list__item">
+                                        <li
+                                            className="filters__list__item"
+                                            key={node.frontmatter.title}
+                                        >
                                             <Link
                                                 to={`/projects/${node.frontmatter.slug}`}
                                                 className={`filters__list__link link--no-underline`}

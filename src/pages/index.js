@@ -17,7 +17,7 @@ const Home = (props) => {
             <Helmet title={siteTitle} />
             <main className="main">
                 <article
-                    className="home-container container "
+                    className="home-container container"
                     style={{ display: 'flex', height: '100vh' }}
                 >
                     <div className="home-content">
