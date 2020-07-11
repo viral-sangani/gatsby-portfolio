@@ -224,7 +224,7 @@ function renderMain() {
                 <div className="btn">
                     <IconButton
                         style={{
-                            color: colorMode === 'light' ? '#000' : '#fff',
+                            color: 'var(--font-color)',
                         }}
                         onClick={() => {
                             window.open(
@@ -237,7 +237,7 @@ function renderMain() {
                     </IconButton>
                     <IconButton
                         style={{
-                            color: colorMode === 'light' ? '#000' : '#fff',
+                            color: 'var(--font-color)',
                         }}
                         onClick={() => {
                             window.open(
@@ -250,7 +250,7 @@ function renderMain() {
                     </IconButton>
                     <IconButton
                         style={{
-                            color: colorMode === 'light' ? '#000' : '#fff',
+                            color: 'var(--font-color)',
                         }}
                         onClick={() => {
                             window.open(
@@ -263,7 +263,7 @@ function renderMain() {
                     </IconButton>
                     <IconButton
                         style={{
-                            color: colorMode === 'light' ? '#000' : '#fff',
+                            color: 'var(--font-color)',
                         }}
                         onClick={() => {
                             window.open(
