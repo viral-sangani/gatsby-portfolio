@@ -20,7 +20,7 @@ const Projects = ({ projects }) => {
                     </header>
                 </div>
             </div>
-            <div className="row mb-xs-60 mb-md-80">
+            <div className="row">
                 {projects.map(({ node }) => {
                     if (node.frontmatter.isRecentWork) {
                         console.log(

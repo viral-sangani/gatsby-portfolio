@@ -41,8 +41,13 @@ const Footer = ({ children }) => {
                                         <span>&mdash;</span>
                                     </li>
                                     <li>
-                                        <a href="https://viralsangani.me">
-                                            Privacy
+                                        <a
+                                            href="https://hackclub.viralsangani.me"
+                                            arget="_blank"
+                                            rel="noopener noreferrer"
+                                            title="HackClub Profile"
+                                        >
+                                            HackClub Profile
                                         </a>
                                     </li>
                                 </ul>
@@ -92,16 +97,6 @@ const Footer = ({ children }) => {
                                     Twitter
                                 </a>
                             </li>
-                            {/* <li>
-                                <a
-                                    href="http://stackoverflow.com/users/396300/timmy-omahony"
-                                    target="_blank"
-                                    title="See my Stack Overflow profile"
-                                    rel="noopener noreferrer"
-                                >
-                                    Stack Overflow
-                                </a>
-                            </li> */}
                         </ul>
                     </div>
                 </div>

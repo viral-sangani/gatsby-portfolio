@@ -8,32 +8,45 @@ import Projects from '../components/Projects'
 import Svg from '../../static/images/main-image.svg'
 import AboutMe from '../components/AboutMe'
 import Github from '../components/Github/Github'
+import GithubGraph from '../components/Github/GithubGraph'
 
 const Home = (props) => {
     const siteTitle = 'Viral Sangani'
+
     const projects = props.data.allMdx.edges
     return (
-        <Layout>
-            <Helmet title={siteTitle} />
-            <main className="main">
-                <article
-                    className="home-container container"
-                    style={{ display: 'flex', height: '100vh' }}
-                >
-                    <div className="home-content">
-                        <Main />
-                    </div>
-                    <div className="home-svg">
-                        <Svg style={{ width: '100%' }} />
-                    </div>
-                </article>
-                <article className="container" style={{ display: 'flex' }}>
-                    <Projects projects={projects} />
-                    <AboutMe />
-                    <Github />
-                </article>
-            </main>
-        </Layout>
+        <div class="curved-div">
+            <Layout>
+                <Helmet title={siteTitle} />
+                <main className="main">
+                    <article
+                        className="home-container container"
+                        style={{ display: 'flex', height: '100vh' }}
+                    >
+                        <div className="home-content">
+                            <Main />
+                        </div>
+                        <div className="home-svg">
+                            <Svg style={{ width: '100%' }} />
+                        </div>
+                    </article>
+                    <article className="container" style={{ display: 'flex' }}>
+                        <Projects projects={projects} />
+                        <AboutMe />
+                        <Github />
+                        <div
+                            style={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: " 'center",
+                            }}
+                        >
+                            <GithubGraph />
+                        </div>
+                    </article>
+                </main>
+            </Layout>
+        </div>
     )
 }
 

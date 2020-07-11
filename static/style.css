@@ -3355,6 +3355,14 @@ figure {
     margin-top: 40px;
 }
 
+.pt-xs-80 {
+    padding-top: 80px;
+}
+
+.pt-xs-40 {
+    padding-top: 40px;
+}
+
 .mt-xs-20 {
     margin-top: 20px;
 }
@@ -3402,6 +3410,12 @@ figure {
     }
     .mt-md-40 {
         margin-top: 40px;
+    }
+    .pt-md-60 {
+        padding-top: 60px;
+    }
+    .pt-md-40 {
+        padding-top: 40px;
     }
     .mt-md-20 {
         margin-top: 20px;
@@ -3576,6 +3590,14 @@ figure {
     margin-bottom: 40px;
 }
 
+.pb-xs-60 {
+    padding-bottom: 60px;
+}
+
+.pb-xs-40 {
+    padding-bottom: 40px;
+}
+
 .mb-xs-20 {
     margin-bottom: 20px;
 }
@@ -3605,6 +3627,12 @@ figure {
     }
     .mb-sm-40 {
         margin-bottom: 40px;
+    }
+    .pb-sm-60 {
+        padding-bottom: 60px;
+    }
+    .pb-sm-40 {
+        padding-bottom: 40px;
     }
     .mb-sm-20 {
         margin-bottom: 20px;

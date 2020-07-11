@@ -3,7 +3,6 @@ module.exports = {
         siteUrl: `https://viralsangani.me`,
     },
     plugins: [
-        `gatsby-plugin-offline`,
         `gatsby-plugin-react-helmet`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,

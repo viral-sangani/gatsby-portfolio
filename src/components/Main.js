@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Spring } from 'react-spring/renderprops'
 import Resume from '../../static/Viral_Sangani_Resume.pdf'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import InstagramIcon from '@material-ui/icons/Instagram'
+import TwitterIcon from '@material-ui/icons/Twitter'
+import { IconButton } from '@material-ui/core'
+import { ThemeContext } from './Context'
 
 function renderMain() {
+    const { colorMode } = useContext(ThemeContext)
     return (
         <section
             className="hero main-name__title"
@@ -211,6 +218,62 @@ function renderMain() {
                             Download Resume
                         </button>
                     </a>
+                </div>
+            </div>
+            <div className="btn-wrapper" style={{ marginTop: 20 }}>
+                <div className="btn">
+                    <IconButton
+                        style={{
+                            color: colorMode === 'light' ? '#000' : '#fff',
+                        }}
+                        onClick={() => {
+                            window.open(
+                                'https://github.com/viral-sangani',
+                                '_blank'
+                            )
+                        }}
+                    >
+                        <GitHubIcon style={{ fontSize: 30 }} />
+                    </IconButton>
+                    <IconButton
+                        style={{
+                            color: colorMode === 'light' ? '#000' : '#fff',
+                        }}
+                        onClick={() => {
+                            window.open(
+                                'https://www.linkedin.com/in/viral-sangani/',
+                                '_blank'
+                            )
+                        }}
+                    >
+                        <LinkedInIcon style={{ fontSize: 40 }} />
+                    </IconButton>
+                    <IconButton
+                        style={{
+                            color: colorMode === 'light' ? '#000' : '#fff',
+                        }}
+                        onClick={() => {
+                            window.open(
+                                'https://twitter.com/viral_sangani_',
+                                '_blank'
+                            )
+                        }}
+                    >
+                        <TwitterIcon style={{ fontSize: 37 }} />
+                    </IconButton>
+                    <IconButton
+                        style={{
+                            color: colorMode === 'light' ? '#000' : '#fff',
+                        }}
+                        onClick={() => {
+                            window.open(
+                                'https://www.instagram.com/__viral_/',
+                                '_blank'
+                            )
+                        }}
+                    >
+                        <InstagramIcon style={{ fontSize: 37 }} />
+                    </IconButton>
                 </div>
             </div>
         </section>
