@@ -16,21 +16,26 @@ export default function AllProjectAside({ projectList }) {
                                     <li className="filters__list__item">
                                         <p>Featured Projects</p>
                                     </li>
-                                    {projectList.map(({ node }) => (
-                                        <li
-                                            className="filters__list__item"
-                                            key={node.frontmatter.title}
-                                        >
-                                            <Link
-                                                to={`/projects/${node.frontmatter.slug}`}
-                                                className={`filters__list__link link--no-underline`}
-                                                style={{ cursor: 'pointer' }}
-                                            >
-                                                {node.frontmatter.title} -{' '}
-                                                {node.frontmatter.year}
-                                            </Link>
-                                        </li>
-                                    ))}
+                                    {projectList.map(({ node }) => {
+                                        if (node.frontmatter.featuredProjects) {
+                                            return (
+                                                <li
+                                                    className="filters__list__item"
+                                                    key={node.frontmatter.title}
+                                                >
+                                                    <Link
+                                                        to={`/projects/${node.frontmatter.slug}`}
+                                                        className={`filters__list__link link--no-underline`}
+                                                        style={{
+                                                            cursor: 'pointer',
+                                                        }}
+                                                    >
+                                                        {node.frontmatter.title}{' '}
+                                                    </Link>
+                                                </li>
+                                            )
+                                        }
+                                    })}
                                 </ul>
                             </nav>
                         </div>

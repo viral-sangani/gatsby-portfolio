@@ -55,6 +55,7 @@ export const pageQuery = graphql`
                 tagLine
                 title
                 year
+                featuredProjects
                 featuredImage {
                     childImageSharp {
                         fluid(maxWidth: 1000, quality: 100) {

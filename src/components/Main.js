@@ -15,6 +15,8 @@ function renderMain() {
             className="hero main-name__title"
             data-component="hero"
             style={{
+                marginTop: 40,
+                display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
                 alignSelf: 'center',

@@ -8,7 +8,6 @@ export default function AllProjectList({ projectList }) {
             <div className="col-xs-12 col-md-9">
                 <div className="row">
                     {projectList.map(({ node }) => {
-                        console.log(node)
                         return (
                             <div
                                 className="col-xs-12 col-sm-6 col-md-6 col-lg-6 mb-xs-40 mb-md-80"

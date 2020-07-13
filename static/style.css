@@ -2718,9 +2718,9 @@ figure {
     padding: 0;
     list-style: none;
 }
-.filters__list__item:nth-child(n + 4) .filters__list__link {
+/* .filters__list__item:nth-child(n + 4) .filters__list__link {
     display: none;
-}
+} */
 
 .filters__list__link {
     font-size: 1.8rem;

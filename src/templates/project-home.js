@@ -45,6 +45,7 @@ export const pageQuery = graphql`
                         project_url
                         isRecentWork
                         color_hex
+                        featuredProjects
                     }
                 }
             }
