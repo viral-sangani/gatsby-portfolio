@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import ProjectAside from '../components/ProjectHome/ProjectAside'
 import { graphql } from 'gatsby'
 import ProjectDetail from '../components/ProjectHome/ProjectDetail'
+import SEO from '../components/Seo'
 
 export default function ProjectHome(props) {
     const project = props.data.mdx
@@ -14,6 +15,7 @@ export default function ProjectHome(props) {
     )
     return (
         <Layout>
+            <SEO title={project.frontmatter.title} />
             <main className="main">
                 <div className="container mt-xs-20 mt-sm-40 mb-xs-120">
                     <div className="row">

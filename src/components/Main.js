@@ -222,103 +222,39 @@ function renderMain() {
                             alignItems: 'center',
                         }}
                     >
-                        <div
+                        <a
+                            href="https://github.com/viral-sangani"
+                            rel="noopener noreferrer"
+                            target="_blank"
                             style={{ margin: 12, cursor: 'pointer' }}
-                            onClick={() =>
-                                window.open(
-                                    'https://github.com/viral-sangani',
-                                    '_blank'
-                                )
-                            }
                         >
                             <GithubIcon style={{ width: 35, height: 35 }} />
-                        </div>
-                        <div
+                        </a>
+                        <a
+                            href="https://twitter.com/viral_sangani_"
+                            rel="noopener noreferrer"
+                            target="_blank"
                             style={{ margin: 12, cursor: 'pointer' }}
-                            onClick={() =>
-                                window.open(
-                                    'https://twitter.com/viral_sangani_',
-                                    '_blank'
-                                )
-                            }
                         >
                             <TwitterIcon style={{ width: 35, height: 35 }} />
-                        </div>
-                        <div
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/viral-sangani/"
+                            rel="noopener noreferrer"
+                            target="_blank"
                             style={{ margin: 12, cursor: 'pointer' }}
-                            onClick={() =>
-                                window.open(
-                                    'https://www.linkedin.com/in/viral-sangani/',
-                                    '_blank'
-                                )
-                            }
                         >
                             <LinkedinIcon style={{ width: 35, height: 35 }} />
-                        </div>
-                        <div
+                        </a>
+                        <a
+                            href="https://www.instagram.com/__viral_/"
+                            rel="noopener noreferrer"
+                            target="_blank"
                             style={{ margin: 12, cursor: 'pointer' }}
-                            onClick={() =>
-                                window.open(
-                                    'https://www.instagram.com/__viral_/',
-                                    '_blank'
-                                )
-                            }
                         >
                             <InstagramIcon style={{ width: 35, height: 35 }} />
-                        </div>
+                        </a>
                     </div>
-                    {/* <IconButton
-                        style={{
-                            color: 'var(--font-color)',
-                        }}
-                        onClick={() => {
-                            window.open(
-                                '',
-                                '_blank'
-                            )
-                        }}
-                    >
-                        <GitHubIcon style={{ fontSize: 30 }} />
-                    </IconButton> 
-                    <IconButton
-                        style={{
-                            color: 'var(--font-color)',
-                        }}
-                        onClick={() => {
-                            window.open(
-                                '',
-                                '_blank'
-                            )
-                        }}
-                    >
-                        <LinkedInIcon style={{ fontSize: 40 }} />
-                    </IconButton>
-                    <IconButton
-                        style={{
-                            color: 'var(--font-color)',
-                        }}
-                        onClick={() => {
-                            window.open(
-                                '',
-                                '_blank'
-                            )
-                        }}
-                    >
-                        <TwitterIcon style={{ fontSize: 37 }} />
-                    </IconButton>
-                    <IconButton
-                        style={{
-                            color: 'var(--font-color)',
-                        }}
-                        onClick={() => {
-                            window.open(
-                                '',
-                                '_blank'
-                            )
-                        }}
-                    >
-                        <InstagramIcon style={{ fontSize: 37 }} />
-                    </IconButton>*/}
                 </div>
             </div>
         </section>

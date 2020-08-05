@@ -1,6 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Main from '../components/Main'
@@ -8,7 +6,8 @@ import Projects from '../components/Projects'
 import Svg from '../../static/images/main-image.svg'
 import AboutMe from '../components/AboutMe'
 import Github from '../components/Github/Github'
-import GithubGraph from '../components/Github/GithubGraph'
+// import GithubGraph from '../components/Github/GithubGraph'
+import SEO from '../components/Seo'
 
 const Home = (props) => {
     const siteTitle = 'Viral Sangani'
@@ -17,7 +16,7 @@ const Home = (props) => {
     return (
         <div class="curved-div">
             <Layout>
-                <Helmet title={siteTitle} />
+                <SEO title={siteTitle} />
                 <main className="main">
                     <article
                         className="home-container container"

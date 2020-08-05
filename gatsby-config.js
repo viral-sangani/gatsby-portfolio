@@ -1,6 +1,15 @@
 module.exports = {
     siteMetadata: {
+        title: `Viral Sangani`,
+        author: {
+            name: `Viral Sangani`,
+            summary: `Your Friendly Neighborhood CSE Student`,
+        },
+        description: `Portfolio website of Viral Sangani`,
         siteUrl: `https://viralsangani.me`,
+        social: {
+            twitter: `viral_sangani_`,
+        },
     },
     plugins: [
         `gatsby-plugin-preact`,

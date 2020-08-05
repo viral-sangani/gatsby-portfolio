@@ -74,6 +74,7 @@ const Navigaion = () => {
                                                     className="header-nav__link"
                                                     href="https://blog.viralsangani.me"
                                                     target="_blank"
+                                                    rel="noopener noreferrer"
                                                 >
                                                     Blog
                                                 </a>
@@ -139,18 +140,6 @@ const Navigaion = () => {
                                                             }}
                                                         />
                                                     </div>
-                                                    // <IconButton
-                                                    //     aria-label="light"
-                                                    //     style={{
-                                                    //         color:
-                                                    //             'var(--font-color)',
-                                                    //     }}
-                                                    //     onClick={() => {
-                                                    //         setColorMode('dark')
-                                                    //     }}
-                                                    // >
-                                                    //     <Brightness4Icon fontSize="large" />
-                                                    // </IconButton>
                                                 )}
                                             </li>
                                         </ul>
@@ -159,6 +148,7 @@ const Navigaion = () => {
                                         className="header-hamburger button--reset clickable"
                                         data-header-hamburger
                                         onClick={showNav}
+                                        aria-label="Hamburger"
                                     >
                                         <svg
                                             className="svg svg--hamburger"
@@ -236,6 +226,7 @@ const Navigaion = () => {
                                         className="header-nav__link"
                                         href="https://blog.viralsangani.me"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         Blog
                                     </a>

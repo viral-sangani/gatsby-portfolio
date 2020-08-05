@@ -3,11 +3,13 @@ import AllProjectList from '../components/ProjectHome/AllProjectList'
 import AllProjectAside from '../components/ProjectHome/AllProjectAside'
 import Layout from '../components/layout'
 import { graphql } from 'gatsby'
+import SEO from '../components/Seo'
 
 const ProjectHome = (props) => {
     const projects = props.data.allMdx.edges
     return (
         <Layout>
+            <SEO title="All Projects of Viral Sangani" />
             <main className="main">
                 <div className="container mt-xs-20 mt-md-80 mb-xs-80">
                     <div className="row">
