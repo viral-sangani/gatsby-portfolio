@@ -3,6 +3,7 @@ module.exports = {
         siteUrl: `https://viralsangani.me`,
     },
     plugins: [
+        `gatsby-plugin-preact`,
         `gatsby-plugin-react-helmet`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
@@ -85,5 +86,18 @@ module.exports = {
                 policy: [{ userAgent: '*', allow: '/' }],
             },
         },
+        {
+            resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
+            options: {
+                devMode: true,
+            },
+        },
+        {
+            resolve: `gatsby-plugin-postcss`,
+            options: {
+                postCssPlugins: [require(`postcss-preset-env`)({ stage: 0 })],
+            },
+        },
+        `gatsby-plugin-no-javascript`,
     ],
 }

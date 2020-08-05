@@ -19,7 +19,10 @@
         "gatsby-plugin-google-tagmanager": "^2.3.1",
         "gatsby-plugin-manifest": "^2.4.16",
         "gatsby-plugin-mdx": "^1.2.11",
+        "gatsby-plugin-no-javascript": "^2.0.5",
         "gatsby-plugin-offline": "^3.2.15",
+        "gatsby-plugin-postcss": "^2.3.11",
+        "gatsby-plugin-preact": "^4.0.9",
         "gatsby-plugin-react-helmet": "^3.2.4",
         "gatsby-plugin-react-svg": "^3.0.0",
         "gatsby-plugin-robots-txt": "^1.5.1",
@@ -29,6 +32,8 @@
         "gatsby-source-filesystem": "^2.2.4",
         "gatsby-source-rest-api": "^0.2.3",
         "gatsby-transformer-sharp": "^2.4.6",
+        "postcss-preset-env": "^6.7.0",
+        "preact": "^10.4.6",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "react-flip-move": "^3.0.4",
@@ -40,6 +45,7 @@
     "devDependencies": {
         "eslint": "^6.8.0",
         "eslint-plugin-react": "^7.19.0",
+        "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.11",
         "prettier": "^2.0.4"
     },
     "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
@@ -53,7 +59,7 @@
         "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
     },
     "scripts": {
-        "start": "gatsby build; gatsby serve --port $PORT",
+        "start": "gatsby build",
         "dev": "gatsby develop",
         "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
         "test": "echo \"Error: no test specified\" && exit 1",
