@@ -19,7 +19,7 @@ const MagicScriptTag = () => {
                     return mql.matches ? 'dark' : 'light'
                 }
 
-                return 'light'
+                return 'dark'
             }
             const colorMode = getInitialColorMode();
             const root = document.documentElement;

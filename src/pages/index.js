@@ -41,7 +41,7 @@ const Home = (props) => {
                                 alignItems: " 'center",
                             }}
                         >
-                            <GithubGraph />
+                            {/* <GithubGraph /> */}
                         </div>
                     </article>
                 </main>

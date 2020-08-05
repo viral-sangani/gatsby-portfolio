@@ -3,19 +3,10 @@ module.exports = {
         siteUrl: `https://viralsangani.me`,
     },
     plugins: [
-        `gatsby-plugin-material-ui`,
         `gatsby-plugin-react-helmet`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         `gatsby-plugin-mdx`,
-        {
-            resolve: `gatsby-plugin-s3`,
-            options: {
-                bucketName: 'viralsangani.me',
-                protocol: 'https',
-                hostname: 'www.viralsangani.me',
-            },
-        },
         {
             resolve: 'gatsby-plugin-zopfli',
             options: {
@@ -53,27 +44,12 @@ module.exports = {
                 siteSpeedSampleRate: 10,
             },
         },
-        {
-            resolve: 'gatsby-plugin-typography',
-            options: {
-                pathToConfigModule: 'src/utils/typography',
-            },
-        },
-        {
-            resolve: `gatsby-plugin-nprogress`,
-            options: {
-                // Setting a color is optional.
-                color: `tomato`,
-                // Disable the loading spinner.
-                showSpinner: true,
-            },
-        },
         `gatsby-plugin-advanced-sitemap`,
         {
             resolve: 'gatsby-plugin-react-svg',
             options: {
                 rule: {
-                    include: /static/, // See below to configure properly
+                    include: /static/,
                 },
             },
         },

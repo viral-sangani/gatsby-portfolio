@@ -1,11 +1,8 @@
 import React, { useState, useContext } from 'react'
 import { Link } from 'gatsby'
-import Brightness4Icon from '@material-ui/icons/Brightness4'
-import Brightness7Icon from '@material-ui/icons/Brightness7'
-import IconButton from '@material-ui/core/IconButton'
+import LightthemeIcon from '../../static/images/light-theme.svg'
+import DarkthemeIcon from '../../static/images/dark-theme.svg'
 import { ThemeContext } from './Context'
-import { Switch } from '@material-ui/core'
-import { FormGroup, FormControlLabel, Typography } from '@material-ui/core'
 
 const Navigaion = () => {
     const [showHamburger, setShowHamburger] = useState(false)
@@ -99,11 +96,14 @@ const Navigaion = () => {
                                             </li>
                                             <li className="header-nav__item hide-xs show-sm">
                                                 {colorMode === 'dark' ? (
-                                                    <IconButton
-                                                        aria-label="light"
+                                                    <div
                                                         style={{
-                                                            color:
-                                                                'var(--font-color)',
+                                                            cursor: 'pointer',
+                                                            display: 'flex',
+                                                            justifyContent:
+                                                                'center',
+                                                            alignItems:
+                                                                'center',
                                                         }}
                                                         onClick={() => {
                                                             setColorMode(
@@ -111,21 +111,46 @@ const Navigaion = () => {
                                                             )
                                                         }}
                                                     >
-                                                        <Brightness7Icon fontSize="large" />
-                                                    </IconButton>
+                                                        <DarkthemeIcon
+                                                            style={{
+                                                                width: 25,
+                                                                height: 25,
+                                                            }}
+                                                        />
+                                                    </div>
                                                 ) : (
-                                                    <IconButton
-                                                        aria-label="light"
+                                                    <div
                                                         style={{
-                                                            color:
-                                                                'var(--font-color)',
+                                                            cursor: 'pointer',
+                                                            display: 'flex',
+                                                            justifyContent:
+                                                                'center',
+                                                            alignItems:
+                                                                'center',
                                                         }}
                                                         onClick={() => {
                                                             setColorMode('dark')
                                                         }}
                                                     >
-                                                        <Brightness4Icon fontSize="large" />
-                                                    </IconButton>
+                                                        <LightthemeIcon
+                                                            style={{
+                                                                width: 25,
+                                                                height: 25,
+                                                            }}
+                                                        />
+                                                    </div>
+                                                    // <IconButton
+                                                    //     aria-label="light"
+                                                    //     style={{
+                                                    //         color:
+                                                    //             'var(--font-color)',
+                                                    //     }}
+                                                    //     onClick={() => {
+                                                    //         setColorMode('dark')
+                                                    //     }}
+                                                    // >
+                                                    //     <Brightness4Icon fontSize="large" />
+                                                    // </IconButton>
                                                 )}
                                             </li>
                                         </ul>
@@ -231,7 +256,7 @@ const Navigaion = () => {
                                         viral.sangani2011@gmail.com
                                     </a>
                                 </li>
-                                <li className="header-nav__item">
+                                {/* <li className="header-nav__item">
                                     <FormGroup row>
                                         <FormControlLabel
                                             control={
@@ -259,7 +284,7 @@ const Navigaion = () => {
                                             label={<p>Dark</p>}
                                         />
                                     </FormGroup>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>

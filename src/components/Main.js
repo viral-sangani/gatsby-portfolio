@@ -1,15 +1,15 @@
 import React, { useContext } from 'react'
 import { Spring } from 'react-spring/renderprops'
 import Resume from '../../static/Viral_Sangani_Resume.pdf'
-import GitHubIcon from '@material-ui/icons/GitHub'
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
-import InstagramIcon from '@material-ui/icons/Instagram'
-import TwitterIcon from '@material-ui/icons/Twitter'
-import { IconButton } from '@material-ui/core'
 import { ThemeContext } from './Context'
+import GithubIcon from '../../static/images/github.svg'
+import TwitterIcon from '../../static/images/twitter.svg'
+import LinkedinIcon from '../../static/images/linkedin.svg'
+import InstagramIcon from '../../static/images/instagram.svg'
 
 function renderMain() {
     const { colorMode } = useContext(ThemeContext)
+    console.log(GithubIcon)
     return (
         <section
             className="hero main-name__title"
@@ -199,18 +199,6 @@ function renderMain() {
                             </div>
                         )}
                     </Spring>
-                    {/* <br />
-                        <br /> */}
-                    {/* I build, automate &amp; sometimes rescue applications.
-                        <br />
-                        Have a project or idea you'd like to discuss? Let's chat{' '}
-                        <br />
-                        <a
-                            className="link--underline"
-                            href="mailto:viral.sangani2011@gmail.com"
-                        >
-                            viral.sangani2011@gmail.com
-                        </a> */}
                 </h1>
             </div>
             <div className="btn-wrapper">
@@ -223,27 +211,82 @@ function renderMain() {
                 </div>
             </div>
             <div className="btn-wrapper" style={{ marginTop: 20 }}>
-                <div className="btn">
-                    <IconButton
+                <div
+                    className="btn"
+                    style={{ display: 'flex', flexWrap: 'nowrap' }}
+                >
+                    <div
+                        style={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                        }}
+                    >
+                        <div
+                            style={{ margin: 12, cursor: 'pointer' }}
+                            onClick={() =>
+                                window.open(
+                                    'https://github.com/viral-sangani',
+                                    '_blank'
+                                )
+                            }
+                        >
+                            <GithubIcon style={{ width: 35, height: 35 }} />
+                        </div>
+                        <div
+                            style={{ margin: 12, cursor: 'pointer' }}
+                            onClick={() =>
+                                window.open(
+                                    'https://twitter.com/viral_sangani_',
+                                    '_blank'
+                                )
+                            }
+                        >
+                            <TwitterIcon style={{ width: 35, height: 35 }} />
+                        </div>
+                        <div
+                            style={{ margin: 12, cursor: 'pointer' }}
+                            onClick={() =>
+                                window.open(
+                                    'https://www.linkedin.com/in/viral-sangani/',
+                                    '_blank'
+                                )
+                            }
+                        >
+                            <LinkedinIcon style={{ width: 35, height: 35 }} />
+                        </div>
+                        <div
+                            style={{ margin: 12, cursor: 'pointer' }}
+                            onClick={() =>
+                                window.open(
+                                    'https://www.instagram.com/__viral_/',
+                                    '_blank'
+                                )
+                            }
+                        >
+                            <InstagramIcon style={{ width: 35, height: 35 }} />
+                        </div>
+                    </div>
+                    {/* <IconButton
                         style={{
                             color: 'var(--font-color)',
                         }}
                         onClick={() => {
                             window.open(
-                                'https://github.com/viral-sangani',
+                                '',
                                 '_blank'
                             )
                         }}
                     >
                         <GitHubIcon style={{ fontSize: 30 }} />
-                    </IconButton>
+                    </IconButton> 
                     <IconButton
                         style={{
                             color: 'var(--font-color)',
                         }}
                         onClick={() => {
                             window.open(
-                                'https://www.linkedin.com/in/viral-sangani/',
+                                '',
                                 '_blank'
                             )
                         }}
@@ -256,7 +299,7 @@ function renderMain() {
                         }}
                         onClick={() => {
                             window.open(
-                                'https://twitter.com/viral_sangani_',
+                                '',
                                 '_blank'
                             )
                         }}
@@ -269,13 +312,13 @@ function renderMain() {
                         }}
                         onClick={() => {
                             window.open(
-                                'https://www.instagram.com/__viral_/',
+                                '',
                                 '_blank'
                             )
                         }}
                     >
                         <InstagramIcon style={{ fontSize: 37 }} />
-                    </IconButton>
+                    </IconButton>*/}
                 </div>
             </div>
         </section>
