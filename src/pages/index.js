@@ -32,16 +32,16 @@ const Home = (props) => {
                     <article className="container" style={{ display: 'flex' }}>
                         <Projects projects={projects} />
                         <AboutMe />
-                        <Github />
-                        <div
+                        {/* <Github /> */}
+                        {/* <div
                             style={{
                                 display: 'flex',
                                 justifyContent: 'center',
                                 alignItems: " 'center",
                             }}
-                        >
-                            {/* <GithubGraph /> */}
-                        </div>
+                        > */}
+                        {/* <GithubGraph /> */}
+                        {/* </div> */}
                     </article>
                 </main>
             </Layout>
