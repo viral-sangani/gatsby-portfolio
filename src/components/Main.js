@@ -51,7 +51,7 @@ function renderMain() {
                     </Spring> */}
                 </h1>
             </div>
-            <div className="btn-wrapper">
+            {/* <div className="btn-wrapper">
                 <div className="btn">
                     <a href={Resume} download>
                         <button id="button" type="button">
@@ -59,7 +59,7 @@ function renderMain() {
                         </button>
                     </a>
                 </div>
-            </div>
+            </div> */}
             <div className="btn-wrapper" style={{ marginTop: 20 }}>
                 <div
                     className="btn"
