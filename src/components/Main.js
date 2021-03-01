@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import { Spring } from 'react-spring/renderprops'
 import Resume from '../../static/Viral_Sangani_Resume.pdf'
 import { ThemeContext } from './Context'
 import GithubIcon from '../../static/images/github.svg'
@@ -29,158 +28,9 @@ function renderMain() {
 
             <div className="hero__text main-text">
                 <h1 className="large ">
-                    I can solve
-                    <Spring
-                        from={{
-                            opacity: 1,
-                            textDecoration: 'none',
-                            display: 'inline-block',
-                        }}
-                        to={{
-                            opacity: 0.45,
-                            textDecoration: 'line-through',
-                        }}
-                        config={{ delay: 7500 }}
-                    >
-                        {(props) => (
-                            <div style={props}>
-                                <span className="none">
-                                    <Spring
-                                        from={{
-                                            opacity: 1,
-                                            textDecoration: 'none',
-                                            display: 'inline-block',
-                                        }}
-                                        to={{
-                                            opacity: 0.5,
-                                            textDecoration: 'line-through',
-                                            display: 'inline-block',
-                                        }}
-                                        config={{
-                                            delay: 2500,
-                                        }}
-                                    >
-                                        {(props) => (
-                                            <div style={props}>
-                                                <span className="all">
-                                                    &nbsp;all&nbsp;
-                                                </span>
-                                            </div>
-                                        )}
-                                    </Spring>
-                                    <Spring
-                                        from={{
-                                            opacity: 1,
-                                            display: 'none',
-                                        }}
-                                        to={{
-                                            opacity: 1,
-                                            display: 'inline-block',
-                                        }}
-                                        config={{
-                                            delay: 2500,
-                                        }}
-                                    >
-                                        {(props) => (
-                                            <div style={props}>
-                                                <Spring
-                                                    from={{
-                                                        opacity: 1,
-                                                        textDecoration: 'none',
-                                                        display: 'inline-block',
-                                                    }}
-                                                    to={{
-                                                        opacity: 0.5,
-                                                        textDecoration:
-                                                            'line-through',
-                                                        display: 'inline-block',
-                                                    }}
-                                                    config={{
-                                                        delay: 5000,
-                                                    }}
-                                                >
-                                                    {(props) => (
-                                                        <div style={props}>
-                                                            <span className="all">
-                                                                &nbsp;some&nbsp;
-                                                            </span>
-                                                        </div>
-                                                    )}
-                                                </Spring>
-                                            </div>
-                                        )}
-                                    </Spring>
-                                    <Spring
-                                        from={{
-                                            opacity: 1,
-                                            display: 'none',
-                                        }}
-                                        to={{
-                                            opacity: 1,
-                                            display: 'inline-block',
-                                        }}
-                                        config={{
-                                            delay: 5000,
-                                        }}
-                                    >
-                                        {(props) => (
-                                            <div style={props}>
-                                                <Spring
-                                                    from={{
-                                                        opacity: 1,
-                                                        textDecoration: 'none',
-                                                        display: 'inline-block',
-                                                    }}
-                                                    to={{
-                                                        opacity: 0.5,
-                                                        textDecoration:
-                                                            'line-through',
-                                                        display: 'inline-block',
-                                                    }}
-                                                    config={{
-                                                        delay: 7500,
-                                                    }}
-                                                >
-                                                    {(props) => (
-                                                        <div style={props}>
-                                                            <span className="all">
-                                                                &nbsp;one&nbsp;
-                                                            </span>
-                                                        </div>
-                                                    )}
-                                                </Spring>
-                                            </div>
-                                        )}
-                                    </Spring>
-                                    <Spring
-                                        from={{
-                                            opacity: 1,
-                                            textDecoration: 'none',
-                                            display: 'inline-block',
-                                        }}
-                                        to={{
-                                            opacity: 0.5,
-                                            textDecoration: 'line-through',
-                                            display: 'inline-block',
-                                        }}
-                                        config={{
-                                            delay: 7500,
-                                        }}
-                                    >
-                                        {(props) => (
-                                            <div style={props}>
-                                                <span className="all">
-                                                    of your
-                                                </span>
-                                            </div>
-                                        )}
-                                    </Spring>
-                                </span>
-                            </div>
-                        )}
-                    </Spring>
-                    &nbsp;problems
-                    <Spring
+                    I can solve &nbsp;<del style={{ color: '#777' }}>all</del>
+                    &nbsp;some of your&nbsp;problems, ok?
+                    {/* <Spring
                         from={{
                             opacity: 1,
                             display: 'none',
@@ -198,7 +48,7 @@ function renderMain() {
                                 <span>&nbsp;, ok?&nbsp;</span>
                             </div>
                         )}
-                    </Spring>
+                    </Spring> */}
                 </h1>
             </div>
             <div className="btn-wrapper">

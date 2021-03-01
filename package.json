@@ -39,7 +39,6 @@
         "react-flip-move": "^3.0.4",
         "react-helmet": "^6.1.0",
         "react-icons": "^4.2.0",
-        "react-spring": "^8.0.27",
         "styled-components": "^5.2.1"
     },
     "devDependencies": {
